@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "inferio"
+version = "0.0.1"
+description = ""
+authors = ["Portmind's ML Engineering Team"]
+maintainers = [
+    "Sevak Harutyunyan <sevak.harutyunyan@portmind.com>",
+    "Tigran Vardanyan <tigran.vardanyan@portmind.com>",
+    "Armen Gabrielyan <armen.gabrielyan@portmind.com>",
+    "Vaghinak Vardanyan <vaghinak.vardanyan@portmind.com>"
+]
+readme = "README.md"
+repository = "https://github.com/portmind/inferio"
+classifiers = [
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11'
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+uvicorn = "^0.24.0"
+starlette = "^0.32.0"
+httpx = "^0.25.2"
+uvloop = "^0.19.0"
+httptools = "^0.6.1"
+pydantic = "^2.5.2"
+orjson = "^3.9.10"
+starlette-exporter = "^0.17.1"
+python-multipart = { version = "^0.0.5", optional = true }
+
+[tool.poetry.extras]
+fileupload = ["python-multipart"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+pre-commit = "^3.5.0"
+commitizen = "^3.2.2"
+numpy = "^1.20.0"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
