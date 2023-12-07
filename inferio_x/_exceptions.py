@@ -6,8 +6,8 @@ from starlette.status import (
     HTTP_500_INTERNAL_SERVER_ERROR,
 )
 
-from inferio._response import OrJSONResponse
-from inferio._utils import create_background_task_for_exception
+from inferio_x._response import OrJSONResponse
+from inferio_x._utils import create_background_task_for_exception
 
 
 async def http_exception(_: Request, exc: HTTPException):

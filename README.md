@@ -1,5 +1,6 @@
-# InferIO
+# InferIO-X
 
+Inference I/O Extended
 
 ![Python](https://img.shields.io/badge/Python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-brightgreen)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -11,7 +12,7 @@
 
 ## Installation
 ```shell
-$ pip install inferio==0.0.1
+$ pip install inferio-x==0.1.0
 ```
 
 ## Usage

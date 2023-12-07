@@ -2,7 +2,7 @@ import asyncio
 from typing import Dict, Optional
 
 import pydantic
-from inferio import FileUpload
+from inferio_x import FileUpload
 
 from .pipeline import Pipeline
 

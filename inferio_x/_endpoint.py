@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Callable, List
 
-from inferio._method import Method
+from inferio_x._method import Method
 
 
 @dataclass

@@ -1,9 +1,9 @@
 import subprocess
 
-import inferio
+import inferio_x
 
 
 def test_version():
     version = subprocess.check_output(["poetry", "version"])
 
-    assert f"inferio {inferio.__version__}" == version.decode().strip()
+    assert f"inferio {inferio_x.__version__}" == version.decode().strip()

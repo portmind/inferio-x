@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "inferio"
-version = "0.0.1"
+name = "inferio-x"
+version = "0.1.0"
 description = ""
 authors = ["Portmind's ML Engineering Team"]
 maintainers = [
@@ -9,6 +9,7 @@ maintainers = [
     "Armen Gabrielyan <armen.gabrielyan@portmind.com>",
     "Vaghinak Vardanyan <vaghinak.vardanyan@portmind.com>"
 ]
+packages = [{include = "inferio_x"}]
 readme = "README.md"
 repository = "https://github.com/portmind/inferio"
 classifiers = [

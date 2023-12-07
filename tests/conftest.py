@@ -5,7 +5,7 @@ from service.config import config
 from service.predictor import Predictor
 from starlette.testclient import TestClient
 
-from inferio import Endpoint, Method, Service
+from inferio_x import Endpoint, Method, Service
 
 
 @pytest.fixture

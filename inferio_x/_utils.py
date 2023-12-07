@@ -4,8 +4,8 @@ from typing import Optional
 from starlette.background import BackgroundTask
 from starlette.requests import Request
 
-from inferio._background import send_log
-from inferio._log import FailData, Log
+from inferio_x._background import send_log
+from inferio_x._log import FailData, Log
 
 
 def create_background_task_for_exception(

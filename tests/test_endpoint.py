@@ -1,6 +1,6 @@
 import pytest
 
-from inferio import Endpoint, Method
+from inferio_x import Endpoint, Method
 
 
 def test_endpoint_starting_with_slash(predictor):

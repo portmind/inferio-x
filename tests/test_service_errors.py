@@ -1,7 +1,7 @@
 import pytest
 from service.config import config
 
-from inferio import Endpoint, Method, Service
+from inferio_x import Endpoint, Method, Service
 
 
 @pytest.fixture

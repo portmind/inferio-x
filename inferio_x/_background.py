@@ -1,8 +1,8 @@
 import httpx
 import orjson
 
-from inferio._configs import YAMLLOG_PASS, YAMLLOG_URL, YAMLLOG_USER
-from inferio._log import Log
+from inferio_x._configs import YAMLLOG_PASS, YAMLLOG_URL, YAMLLOG_USER
+from inferio_x._log import Log
 
 
 async def send_log(log: Log) -> None:

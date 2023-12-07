@@ -16,14 +16,14 @@ from starlette.requests import Request
 from starlette.status import HTTP_200_OK
 from starlette_exporter import PrometheusMiddleware, handle_metrics
 
-from inferio._background import send_log
-from inferio._configs import INFERIO_APP_NAME
-from inferio._endpoint import Endpoint
-from inferio._exceptions import exception_handlers
-from inferio._file import FileUpload
-from inferio._log import Log, SuccessData
-from inferio._method import Method
-from inferio._response import OrJSONResponse
+from inferio_x._background import send_log
+from inferio_x._configs import INFERIO_APP_NAME
+from inferio_x._endpoint import Endpoint
+from inferio_x._exceptions import exception_handlers
+from inferio_x._file import FileUpload
+from inferio_x._log import Log, SuccessData
+from inferio_x._method import Method
+from inferio_x._response import OrJSONResponse
 
 
 class Service:
