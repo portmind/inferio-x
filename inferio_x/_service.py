@@ -17,7 +17,7 @@ from starlette.status import HTTP_200_OK
 from starlette_exporter import PrometheusMiddleware, handle_metrics
 
 from inferio_x._background import send_log
-from inferio_x._configs import INFERIO_APP_NAME
+from inferio_x._configs import INFERIO_APP_NAME, TIMEOUT_KEEP_ALIVE
 from inferio_x._endpoint import Endpoint
 from inferio_x._exceptions import exception_handlers
 from inferio_x._file import FileUpload
@@ -185,4 +185,5 @@ class Service:
             access_log=self.access_log,
             log_level="info",
             use_colors=False,
+            timeout_keep_alive=TIMEOUT_KEEP_ALIVE
         )
