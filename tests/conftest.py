@@ -70,7 +70,6 @@ def service(predictor):
 def test_client_factory():
     return functools.partial(
         TestClient,
-        backend_options={"use_uvloop": True},
         raise_server_exceptions=False,
     )
 
